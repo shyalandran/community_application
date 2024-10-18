@@ -13,6 +13,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         /* .gradient-text {
             background: linear-gradient(#e66465, #9198e5);
             -webkit-background-clip: text;
@@ -48,19 +49,25 @@
           }
 
           .background-img {
-            background-image: url('assets/img/3.jpg');
+            background-image: url('https://static.vecteezy.com/system/resources/previews/021/599/588/non_2x/abstract-white-and-gray-overlap-circles-background-3d-paper-circle-banner-with-drop-shadows-minimal-simple-design-for-presentation-flyer-brochure-website-book-etc-vector.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
           }
+
+          .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
     </style>
 
 </head>
-<body class="merriweather-sans background-img">
+<body class="playfair-display background-img">
 
-    <header class="d-flex flex-row-reverse fs-5 align-items-center justify-content-center justify-content-md-between pe-5 py-4" style="background-color: #F3C623;">
+    <header class="d-flex  flex-row-reverse lato-regular fs-4 align-items-center justify-content-center justify-content-md-between pe-5 py-4" style="background-color: #F3C623;">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
-            <a class="navbar-brand fs-4 brand-color ms-5" href="#" style="">
+            <a class="navbar-brand fs-3 brand-color ms-5" href="#" style="margin-right: 0px;">
               <img src="assets/img/applogo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-midle">
               Nex Community
             </a>
@@ -69,9 +76,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse  navbar-collapse justify-content-end " id="navbarNav">
+            <div class="collapse  navbar-collapse justify-content-center " id="navbarNav" style="margin-left: -120px;">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item active" >
                         <a class="nav-link section" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
@@ -88,12 +95,17 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-dark me-2"><a href="login.php" class="nav-link">Login</a></button>
+              <button type="button" class="btn btn-dark"><a href="login.php" class="nav-link">Sign-up</a></button>
+            </div>
         </nav>
     </header>
 
     <main>
-      <div class="container  align-text-midle  px-4 py-4">
-        <div class="row align-items-center g-5 mb-5">
+      <div class="container  align-text-midle  px-4">
+        <div class="row align-items-center g-5 ">
             <!-- Text Section -->
             <div class="col-lg-6 " style="margin-left: -70px;">
               <h1 class="display-5 fw-bold text-body-emphasis  lh-1 mb-4">Unite, Empower, and Build a Brighter Tomorrow</h1>
@@ -105,11 +117,11 @@
           </div>
           <!--img section-->
           <div class="col-10 col-sm-8 col-lg-6" >
-            <img src="assets/img/file.png" class="d-block mx-lg-6 " alt="Bootstrap Themes" width="700" height="600" loading="lazy">
+            <img src="assets/img/file.png" class="d-block mx-lg-6 " alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
         </div>
         <!-- Features Section -->
-        <div class="row g-4 py-2 row-cols-1 row-cols-lg-3" style="margin-left: -70px;">
+        <div class="row g-4 py-2 row-cols-1  row-cols-lg-3" style="margin-left: -70px;">
           <div class="col d-flex align-items-start">
             <div class="icon-square text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -152,7 +164,7 @@
     </main>
     
 
-    <footer class="py-3 my-4">
+    <footer class=" my-4 fixed-bottom" >
         <p class="text-center text-body-secondary">© 2024 NexCommunity, Inc</p>
     </footer>
     
